@@ -127,7 +127,7 @@ export function Player() {
           <button 
             type="button" 
             onClick={toggleShuffle}
-            disabled={!episode}
+            disabled={!episode || episodeList.length === 1}
             className={isShuffling ? styles.isActive : ''}
           >
             <img src="/images/shuffle.svg" alt="Shuffle"/>
